@@ -35,13 +35,13 @@ if you run into trouble.
 First, fire open Command Prompt (search for it in your Start menu) or PowerShell,
 or even better, Terminal, and install debian via wsl
 
-```sh
+```bash
 wsl --install -d Debian
 ```
 
 Alternatively, try out ubuntu if you prefer the bleeding edge
 
-```sh
+```bash
 wsl --install -d Debian
 ```
 
@@ -50,21 +50,21 @@ wsl --install -d Debian
 Assuming you are staring at a Debian-based Linux prompt, you should probably
 get up to date
 
-```sh
+```bash
 sudo apt update
 sudo apt upgrade -y
 ```
 
 and now install all the magic sauce
 
-```sh
+```bash
 sudo install git cmake vim
 ```
 
 If you like Visual Studio Code instead of vim (heathen) then you can install on
 native Debian-based via `snap` with
 
-```sh
+```bash
 sudo snap install --classic code
 ```
 
@@ -81,13 +81,13 @@ Now that you are all set up, and assuming you have
 [added it to your github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account),
 first clone the repo
 
-```sh
+```bash
 git clone git@github.com:jacobw56/quadratic_formula.git
 ```
 
 then make a build folder and build it
 
-```sh
+```bash
 cd quadratic_formula
 mkdir build
 cd build
@@ -97,12 +97,12 @@ make
 
 Now try it out!
 
-```sh
+```bash
 ./quadratic_formula -A=2.34 -B=7 -C=-4.51
 ```
 
 or
 
-```sh
+```bash
 ./quadratic_formula --help
 ```
