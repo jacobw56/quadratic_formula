@@ -76,7 +76,10 @@ for that too.
 
 ## Building the code
 
-Now that you are all set up, first clone the repo
+Now that you are all set up, and assuming you have
+[generated an SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and
+[added it to your github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account),
+first clone the repo
 
 ```sh
 git clone git@github.com:jacobw56/quadratic_formula.git
