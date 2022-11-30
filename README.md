@@ -5,7 +5,8 @@ think of. I could also add the quadratic functions to a polynomial struct
 with function pointers (_i.e._, as methods) to make this unnecessarily object
 oriented, but that might be best left to the user as an exercise.
 
-You will note that I include Doxygen-style documentation and it is tooled for
+You will note that I include [Doxygen](https://doxygen.nl/)-style
+documentation and it is tooled for
 the usual gcc/cmake workflow. It's aching to use github actions as a build
 system.
 
