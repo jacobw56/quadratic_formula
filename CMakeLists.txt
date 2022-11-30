@@ -41,11 +41,7 @@ set_target_properties(quadratic_formula PROPERTIES C_STANDARD 17)
 target_sources(quadratic_formula PUBLIC src/quadratic.c)
 
 # Link any libraries you might need (m for math.h)
-target_link_libraries(
-	quadratic_formula
-	PRIVATE
-    m
-)
+target_link_libraries(quadratic_formula PRIVATE m)
 
 # Include your headers
 target_include_directories(quadratic_formula PUBLIC ${INC_DIR})
