@@ -16,4 +16,4 @@ CMakeCache.txt
 .vscode
 
 # Docs
-.doc
+doc/
