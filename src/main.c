@@ -51,6 +51,27 @@ static void help_msg(void)
     printf("\t        \tThis value defaults to 0.\n\n");
 }
 
+static int print_solutions(double *s, int l)
+{
+    int ret = 0;
+    if (l == 0)
+    {
+        ret = printf("\nNo real solutions.\n\n");
+    }
+
+    else if (l == 1)
+    {
+        ret = printf("\nSolution: \t%f\n\n", s[0]);
+    }
+
+    else
+    {
+        ret = printf("\nSolution: \t%f, %f\n\n", s[0], s[1]);
+    }
+
+    return (ret < 0) ? ret : 0;
+}
+
 int main(int argc, char *argv[])
 {
     if (argc > 4)
@@ -93,20 +114,7 @@ int main(int argc, char *argv[])
     int num_solutions = 0;
     num_solutions = quadratic(a, b, c, solutions, sizeof(solutions));
 
-    if (num_solutions == 0)
-    {
-        printf("\nNo real solutions.\n\n");
-    }
-
-    else if (num_solutions == 1)
-    {
-        printf("\nSolution: \t%f\n\n", solutions[0]);
-    }
-
-    else
-    {
-        printf("\nSolution: \t%f, %f\n\n", solutions[0], solutions[1]);
-    }
+    print_solutions(solutions, num_solutions);
 
     return 0;
 }
