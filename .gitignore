@@ -14,3 +14,6 @@ CMakeCache.txt
 
 # Local VSC properties
 .vscode
+
+# Docs
+.doc
