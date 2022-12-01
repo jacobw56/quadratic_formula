@@ -17,6 +17,9 @@
  * to give an example of a program that uses external headers/source files.
  */
 
+#ifndef __QUADRATIC_H
+#define __QUADRATIC_H
+
 #include <math.h>
 #include <stddef.h>
 
@@ -30,3 +33,5 @@
  * @return int          Number of real solutions
  */
 int quadratic(double a, double b, double c, double *s, size_t s_len);
+
+#endif // __QUADRATIC_H
