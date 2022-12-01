@@ -6,7 +6,6 @@
  */
 
 /**
- * /**
  * @addtogroup  Quad Quadratic root finder
  * @defgroup    Main Quadratic root finder main application
  * @ingroup     Quad
