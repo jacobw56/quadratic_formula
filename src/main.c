@@ -51,9 +51,10 @@ static void help_msg(void)
     printf("This has expected return value of 2, -2\n\n");
     printf("Options:\n\n");
     printf("\t--help  \tDisplay this help menu.\n\n");
-    printf("\t-A=value\n");
+    printf("\t-A=value\tAssign a value to coefficient A as in the example above.\n");
+    printf("\t        \tThis value defaults to 1.\n\n");
     printf("\t-B=value\n");
-    printf("\t-C=value\tAssign a value to coefficient A, B, or C as in the example above.\n");
+    printf("\t-C=value\tAssign a value to coefficient B, or C as in the example above.\n");
     printf("\t        \tThis value defaults to 0.\n\n");
 }
 
@@ -93,7 +94,7 @@ int main(int argc, char *argv[])
         return 0;
     }
 
-    double a = 0.0, b = 0.0, c = 0.0;
+    double a = 1.0, b = 0.0, c = 0.0;
 
     /* Assign our coefficients from user input */
     for (int i = 1; i < argc; i++)
@@ -101,6 +102,11 @@ int main(int argc, char *argv[])
         if (strncmp(argv[i], "-A=", 3) == 0)
         {
             a = strtod(argv[i] + 3, NULL);
+            if (a == 0.0)
+            {
+                printf("\nThis is a line, not a parabola! The A coefficient cannot be zero!\n\n");
+                return -1;
+            }
         }
         else if (strncmp(argv[i], "-B=", 3) == 0)
         {
