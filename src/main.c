@@ -6,6 +6,12 @@
  */
 
 /**
+ * /**
+ * @addtogroup  Quad Quadratic root finder
+ * @defgroup    Main Quadratic root finder main application
+ * @ingroup     Quad
+ * @{
+ *
  * @file    main.c
  * @author  Walter Jacob
  * @date    2022
@@ -118,3 +124,7 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+
+/**
+ * @}
+ */

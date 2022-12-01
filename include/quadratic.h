@@ -6,13 +6,18 @@
  */
 
 /**
+ * @addtogroup  Quad Quardatic root library
+ * @defgroup    QuadLib
+ * @ingroup     Quad
+ * @{
+ *
  * @file    quadratic.c
  * @author  Walter Jacob
  * @date    2022
  *
  * @brief Quadratic root finder library
  *
- * Definitely overkill, but this file contains the functions that are used by
+ * @details Definitely overkill, but this file contains the functions that are used by
  * the quadratic root finder program. They are refactored into this library
  * to give an example of a program that uses external headers/source files.
  */
@@ -35,3 +40,5 @@
 int quadratic(double a, double b, double c, double *s, size_t s_len);
 
 #endif // __QUADRATIC_H
+
+/** @} */
