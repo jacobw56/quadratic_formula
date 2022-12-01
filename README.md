@@ -1,9 +1,9 @@
 # Quadratic root finder
 
 Almost the single most overkill version of a quadratic root finder I could
-think of. I could also add the quadratic functions to a polynomial struct
-with function pointers (_i.e._, as methods) to make this unnecessarily object
-oriented, but that might be best left to the user as an exercise.
+think of. I also made a version that uses
+[OOP-style C](https://github.com/jacobw56/quadratic_formula_oop)
+and a [C++ version](https://github.com/jacobw56/quadratic_formula_cpp).
 
 You will note that I include [Doxygen](https://doxygen.nl/)-style
 documentation and it is tooled for
